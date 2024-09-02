@@ -1,0 +1,71 @@
+{
+  "name": "JOY - tech",
+  "short_name": "JT",
+  "description": "IT компания",
+  "dir": "left",
+  "lang": "ru",
+  "icons": [
+    {
+      "src": "pwa-64x64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "purpose": "any",
+      "src": "pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "maskable-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#18181b",
+  "background_color": "#18181b",
+  "display": "standalone",
+  "start_url": "https://pro-joy.tech",
+  "scope": "/",
+  "orientation": "portrait",
+  "splash_pages": null,
+  "display_override": ["window-control-overlay"],
+  "related_applications": [],
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
+  "shortcuts": [
+    {
+      "name": "Оставить заявку",
+      "short_name": "Заявка",
+      "description": "Оставить заявку на разработку ПО",
+      "url": "/zayavka",
+      "icons": [
+        {
+          "src": "/logo.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "О нас",
+      "short_name": "О нас",
+      "description": "Узнать больше о JOY - tech",
+      "url": "/o-nas",
+      "icons": [
+        {
+          "src": "/logo.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ]
+}

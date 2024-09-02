@@ -1,0 +1,148 @@
+@use 'lib-ui.scss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'theme.scss';
+
+* {
+
+    &:focus-visible {
+        outline: 0.5px solid $mainColor;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    @apply transition overflow-x-hidden;
+    font-family: theme('fontFamily.main');
+    font-size: theme('fontSize.base');
+    line-height: theme('lineHeight.normal');
+    background: $bgColor;
+    color: $textColor;
+    width: 100%;
+}
+
+.shadow-card {
+    @apply rounded-lg p-5 border-[1px] border-slate-200/30 dark:border-gray-900/30 transition-all;
+    background: $semiBgColor;
+    box-shadow: var(--box-shadow);
+}
+
+.visability-hover {
+    visibility: hidden;
+}
+
+.visability-hover:hover> :not(:hover) {
+    @apply opacity-90;
+
+    @media (min-width: theme('screens.sm')) {
+        @apply grayscale-[50%] opacity-80 dark:opacity-50;
+    }
+
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+    animation-duration: 0.5s;
+}
+
+//transition atnimation
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.3s;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+
+
+.swipe-move,
+.swipe-enter-active,
+.swipe-leave-active {
+    transition: all 0.3s ease;
+}
+
+.swipe-enter-from,
+.swipe-leave-to {
+    opacity: 0;
+    transform: translateX(30px);
+}
+
+.swipe-leave-active {
+    position: absolute;
+}
+
+.list-move,
+/* apply transition to moving elements */
+.list-enter-active,
+.list-leave-active {
+    transition: all 0.4s ease;
+}
+
+.list-enter-from,
+.list-leave-to {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+/* ensure leaving items are taken out of layout flow so that moving
+   animations can be calculated correctly. */
+.list-leave-active {
+    @apply w-full sm:w-[600px] absolute;
+}
+
+.active-enter-active,
+.active-leave-active {
+    transition: 0.3s ease-in-out;
+}
+
+.active-enter-from {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.active-leave-to {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+//scrollbar
+@media (min-width: theme('screens.lg')) {
+    ::-webkit-scrollbar {
+        width: 6px
+    }
+
+    ::-webkit-scrollbar:horizontal {
+        height: 6px
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 10px
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #0003;
+        border-radius: 10px;
+        transition: all .2s ease-in-out
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        cursor: pointer;
+        background-color: #0000004d
+    }
+
+    .dark {
+        ::-webkit-scrollbar-thumb {
+            background-color: #fff3
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #fff6
+        }
+    }
+}

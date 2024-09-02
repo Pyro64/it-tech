@@ -1,0 +1,74 @@
+:root.theme {
+    --el-text-color-regular: var(--text-color);
+    --el-font-family: theme("fontFamily.main");
+    --el-color-primary: theme("colors.main.500");
+    --el-color-primary-light-3: theme("colors.main.400"); //hover button
+    --el-color-primary-light-5: theme("colors.main.500");
+    --el-color-primary-light-7: theme("colors.main.700");
+    --el-color-primary-light-8: theme("colors.main.800");
+    --el-color-primary-light-9: theme("colors.main.700");
+    --el-color-primary-dark-2: theme(colors.main.600); // active button
+    --el-bg-color-overlay: var(--semi-bg-color);
+    --el-alert-description-font-size: theme("fontSize.base");
+    --el-box-shadow-light: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    --el-box-shadow-lighter: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    --el-box-shadow-dark: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    --el-fill-color: var(--semi-bg-color);
+    --el-tag-font-size: 14px;
+    --swiper-theme-color: var(--main-color);
+
+    .el-dropdown-menu__item {
+        padding: 0;
+    }
+
+    .el-scrollbar {
+        --el-scrollbar-opacity: 0.6;
+        --el-scrollbar-hover-opacity: 0.8;
+    }
+
+
+    .el-popup-parent--hidden {
+        overflow: hidden;
+    }
+
+    // anchor-link.vue
+    .link {
+        .el-anchor__link {
+            @apply py-2;
+        }
+    }
+
+    // anchor-mobile.vue
+    .mobile {
+        .el-anchor__link {
+            @apply text-base py-2;
+        }
+    }
+
+    .el-badge__content.is-dot {
+        @apply bg-orange-500 animate-pulse;
+    }
+
+    .el-message {
+        @apply w-full sm:w-fit;
+    }
+
+    .el-message__content {
+        flex-grow: 1;
+    }
+
+    .el-image-viewer__close {
+        top: 100px;
+    }
+
+    .el-progress__text {
+        min-width: auto;
+    }
+}
+
+:root.dark {
+    .el-scrollbar {
+        --el-scrollbar-opacity: 0.3;
+        --el-scrollbar-hover-opacity: 0.5;
+    }
+}

@@ -1,0 +1,20 @@
+:root {
+    --font: theme(fontFamily.main);
+    --main-bg-color: theme(colors.gray.50);
+    --semi-bg-color: theme(colors.white);
+    --text-color: theme(colors.slate.600);
+    --semi-text-color: theme(colors.slate.400);
+    --hint-color: theme(colors.slate.200);
+    --main-color: theme(colors.main.500);
+    --semi-color: theme(colors.semi.500);
+    --box-shadow: var(--el-box-shadow-light);
+}
+
+:root.dark {
+    --main-bg-color: theme(colors.gray.950);
+    --semi-bg-color: theme(colors.slate.950);
+    --text-color: theme(colors.gray.200);
+    --hint-color: theme(colors.gray.900);
+    --semi-color: theme(colors.semi.500);
+    --box-shadow: var(--el-box-shadow-dark);
+}
