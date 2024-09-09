@@ -77,6 +77,7 @@ switch (props.tagsType) {
     @apply object-contain;
     width: 60px;
     height: 60px;
+    filter: invert(1);
   }
 }
 </style>

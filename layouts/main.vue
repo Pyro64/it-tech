@@ -5,7 +5,7 @@ const NuxtSchemaOrgDefinedTerm: WebSite = {
   '@type': 'WebSite',
   name: `${useSiteName()} – IT компания нового поколения.`,
   description: `${useSiteName()} —  IT компания нового поколения по созданию сайтов и мобильных приложений`,
-  image: '/images/notebook-joytech.png',
+  image: '/images/notebook-ittech.png',
   inLanguage: 'ru_RU',
 }
 

@@ -111,7 +111,7 @@ const formData: FormItems<BidPersonal>[] = [
       model: 'organization',
     },
     props: {
-      placeholder: 'Skills2up',
+      placeholder: 'IT tech',
       clearable: true,
       type: 'text',
     },

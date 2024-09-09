@@ -1,15 +1,10 @@
 {
-  "name": "JOY - tech",
-  "short_name": "JT",
+  "name": "IT - tech",
+  "short_name": "IT",
   "description": "IT компания",
   "dir": "left",
   "lang": "ru",
   "icons": [
-    {
-      "src": "pwa-64x64.png",
-      "sizes": "64x64",
-      "type": "image/png"
-    },
     {
       "src": "pwa-192x192.png",
       "sizes": "192x192",
@@ -31,7 +26,7 @@
   "theme_color": "#18181b",
   "background_color": "#18181b",
   "display": "standalone",
-  "start_url": "https://pro-joy.tech",
+  "start_url": "https://pyro-it.vercel.app/",
   "scope": "/",
   "orientation": "portrait",
   "splash_pages": null,
@@ -57,7 +52,7 @@
     {
       "name": "О нас",
       "short_name": "О нас",
-      "description": "Узнать больше о JOY - tech",
+      "description": "Узнать больше о IT - tech",
       "url": "/o-nas",
       "icons": [
         {
