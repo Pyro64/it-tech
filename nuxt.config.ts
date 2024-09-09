@@ -21,9 +21,6 @@ export default defineNuxtConfig({
       },
     ],
   },
-  nitro: {
-    preset: 'vercel'
-  },
   // future: {
   //   compatibilityVersion: 4,
   // },
