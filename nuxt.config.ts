@@ -161,7 +161,7 @@ export default defineNuxtConfig({
 
   site: {
     // production URL
-    url: `https://pyro-it.vercel.app/`,
+    url: ``,
     name: `${process.env.SITE_NAME}`,
     cacheMaxAgeSeconds: 86_400, // сутки
     indexable: true,
@@ -186,8 +186,8 @@ export default defineNuxtConfig({
     identity: {
       type: 'Organization',
       name: `${process.env.SITE_NAME}`,
-      url: `https://pyro-it.vercel.app/`,
-      logo: `https://pyro-it.vercel.app/logo.png`,
+      url: `https://pyro-tech.vercel.app/`,
+      logo: `https://pyro-tech.vercel.app/logo.png`,
     },
   },
 

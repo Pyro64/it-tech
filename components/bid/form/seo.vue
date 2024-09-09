@@ -85,7 +85,7 @@ const rules = reactive<FormRules<ServiceBidSeo>>({
         <el-form-item label="Текущий сайт (если он есть)" prop="siteLink">
           <el-input
             v-model="seo.siteLink"
-            placeholder="https://pyro-it.vercel.app/"
+            placeholder="https://pyro-tech.vercel.app/"
           />
         </el-form-item>
         <form-item-textarea

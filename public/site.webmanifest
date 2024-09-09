@@ -26,7 +26,7 @@
   "theme_color": "#18181b",
   "background_color": "#18181b",
   "display": "standalone",
-  "start_url": "https://pyro-it.vercel.app/",
+  "start_url": "https://pyro-tech.vercel.app/",
   "scope": "/",
   "orientation": "portrait",
   "splash_pages": null,
