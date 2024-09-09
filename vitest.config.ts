@@ -9,6 +9,7 @@ export default defineVitestConfig({
     'process.env': process.env
   },
   test: {
+    setupFiles: ['./vitest.setup.ts'],
     environment: 'nuxt',
     environmentOptions: {
       nuxt: {
@@ -17,6 +18,9 @@ export default defineVitestConfig({
           indexedDb: true,
         }
       }
-    }
+    },
+    deps: {
+      inline: ['vitest-canvas-mock'],
+    },
   }
 })
