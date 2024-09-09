@@ -29,78 +29,32 @@ export default defineNuxtConfig({
     viewTransition: true,
     componentIslands: true,
     cookieStore: true,
-    defaults: {
-      nuxtLink: {
-        prefetch: true,
-        prefetchOn: { visibility: false, interaction: true },
-      },
-    },
   },
 
   routeRules: {
     '/': {
       prerender: true,
-      cache: {
-        maxAge: 120,
-        staleMaxAge: 86400, // сутки
-        swr: true,
-      },
     },
     '/proekty': {
       prerender: true,
-      cache: {
-        maxAge: 120,
-        staleMaxAge: 86400,
-        swr: true,
-      },
     },
     '/stati': {
       prerender: true,
-      cache: {
-        maxAge: 120,
-        staleMaxAge: 86400,
-        swr: true,
-      },
     },
     '/uslugi': {
       prerender: true,
-      cache: {
-        maxAge: 120,
-        staleMaxAge: 86400,
-        swr: true,
-      },
     },
     '/vakansii': {
       prerender: true,
-      cache: {
-        maxAge: 120,
-        staleMaxAge: 86400,
-        swr: true,
-      },
     },
     '/kontakty': {
       prerender: true,
-      cache: {
-        maxAge: 120,
-        staleMaxAge: 86400,
-        swr: true,
-      },
     },
     '/o-nas': {
       prerender: true,
-      cache: {
-        maxAge: 120,
-        staleMaxAge: 86400,
-        swr: true,
-      },
     },
     '/zayavka': {
       ssr: false,
-      cache: {
-        maxAge: 120,
-        staleMaxAge: 86400,
-        swr: true,
-      },
     },
   },
 
@@ -163,14 +117,8 @@ export default defineNuxtConfig({
     // production URL
     url: ``,
     name: `${process.env.SITE_NAME}`,
-    cacheMaxAgeSeconds: 86_400, // сутки
-    indexable: true,
+    indexable: false,
   },
-
-  // sitemap: {
-  //   // exclude static pages
-  //   excludeAppSources: ['nuxt:pages'],
-  // },
   ogImage: {
     defaults: {
       component: 'OgImage',
@@ -201,6 +149,4 @@ export default defineNuxtConfig({
       },
     ],
   },
-
-  compatibilityDate: '2024-08-26',
 })
