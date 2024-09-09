@@ -9,7 +9,6 @@ const { isOpenDrawer, userInfo } = storeToRefs(useUser)
 const { isMobile } = storeToRefs(global)
 
 const redirectPath = useCookie('redirect')
-const router = useRouter()
 const route = useRoute()
 
 const target = useSwipeChange(isOpenDrawer, 'right')
@@ -20,9 +19,6 @@ const loginHandler = () => {
 }
 const outHandler = () => {
   signOut()
-  if (route.meta.middleware === 'guard') {
-    router.push('/')
-  }
 }
 const title = computed(() => {
   return userInfo.value.firstName === ''
