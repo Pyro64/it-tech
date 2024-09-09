@@ -163,7 +163,7 @@ export default defineNuxtConfig({
     // production URL
     url: ``,
     name: `${process.env.SITE_NAME}`,
-    cacheMaxAgeSeconds: 86_400, // сутки
+    // cacheMaxAgeSeconds: 86_400, // сутки
     indexable: true,
   },
 
