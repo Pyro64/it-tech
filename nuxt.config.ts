@@ -115,14 +115,12 @@ export default defineNuxtConfig({
 
   site: {
     // production URL
-    url: ``,
+    url: `${process.env.SITE_URL}`,
     name: `${process.env.SITE_NAME}`,
-    indexable: false,
   },
   ogImage: {
     defaults: {
       component: 'OgImage',
-      emojis: 'twemoji',
     },
   },
 
