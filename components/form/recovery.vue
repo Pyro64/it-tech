@@ -39,20 +39,10 @@ const submitForm = async (formEl: FormInstance | undefined) => {
   if (!formEl) return
   await formEl.validate((valid, fields) => {
     if (valid) {
-      //   authRequest(data, isLoading)
-      // router.push(`${route.path}?email="${email}"`)
-      // ElMessage({
-      //   message: 'В разработке',
-      //   type: 'info',
-      // })
-      // ElNotification({
-      //   title: 'Восстановление пароля',
-      //   dangerouslyUseHTMLString: true,
-      //   message: `<p>Пройдите по ссылке,отправленной на почту<p/>`,
-      //   type: 'info',
-      //   duration: 7000,
-      //   showClose: true,
-      // })
+      ElMessage({
+        message: 'Запрос на сервер',
+        type: 'success',
+      })
     } else {
       console.log('error submit!', fields)
     }
