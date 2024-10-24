@@ -8,7 +8,7 @@ const navPagesMap = {
   contacts: { href: '/kontakty', name: 'Контакты' },
   vacancies: { href: '/vakansii', name: 'Вакансии' },
   articles: { href: '/stati', name: 'Статьи' },
-} as const
+}
 
 type NavTypeMap = typeof navPagesMap
 type NavTypeKeys = keyof NavTypeMap

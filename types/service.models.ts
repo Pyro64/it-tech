@@ -26,7 +26,7 @@ const serviceMap = {
     title: 'DevOps',
     seo_url: 'devops',
   },
-} as const
+}
 
 export type ServiceBid = {
   site: ServiceBidSite
